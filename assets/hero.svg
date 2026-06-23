@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" fill="none" font-family="'Helvetica Neue', 'Inter', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0A0B"/>
+      <stop offset="1" stop-color="#0F0F13"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="0.55" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="aur1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aur2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- base -->
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#grid)"/>
+
+  <!-- drifting aurora -->
+  <g filter="url(#soft)">
+    <circle cx="1040" cy="120" r="180" fill="url(#aur1)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 40 30; 0 0" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="870" cy="300" r="150" fill="url(#aur2)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -30 -25; 0 0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- eyebrow -->
+  <text x="82" y="104" font-size="15" letter-spacing="5" fill="#8B8B94" font-family="'SF Mono','Consolas','Menlo',monospace">FOUNDER &#183; ENGINEER &#183; WATERLOO, ON</text>
+
+  <!-- headline -->
+  <text x="78" y="196" font-size="74" font-weight="700" letter-spacing="-1.5" fill="#FAFAFA">I build things people</text>
+  <text x="78" y="278" font-size="74" font-weight="700" letter-spacing="-1.5" fill="#FAFAFA">actually use<tspan fill="#6366F1">.</tspan></text>
+
+  <!-- blinking cursor -->
+  <rect x="612" y="240" width="30" height="46" rx="3" fill="url(#accent)">
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.5;0.95;1" dur="1.15s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- animated underline -->
+  <g transform="translate(80,300)">
+    <rect width="470" height="5" rx="2.5" fill="url(#accent)">
+      <animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" dur="1.05s" begin="0.35s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1" keyTimes="0;1" values="0 1;1 1"/>
+    </rect>
+  </g>
+
+  <!-- footer metadata -->
+  <text x="82" y="338" font-size="14.5" letter-spacing="1" fill="#5B5B63" font-family="'SF Mono','Consolas','Menlo',monospace">swiftsign.ca&#160;&#160;&#160;&#183;&#160;&#160;&#160;shahdadk.com&#160;&#160;&#160;&#183;&#160;&#160;&#160;github.com/shahdadk</text>
+</svg>
