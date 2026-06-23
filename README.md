@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero.svg" alt="Shahdad Kompani — I build things people actually use" width="100%">
+  <img src="./assets/hero.svg" alt="Shahdad Kompani: I build things people actually use" width="100%">
 </p>
 
 <p align="center">
@@ -12,18 +12,21 @@
 
 <br/>
 
-Founder and engineer in Waterloo. I take products from idea to production by myself — native iOS, full-stack web, and the AI systems that run them. Short loops, real users, things that ship.
+Founder and engineer in Waterloo. I take products from idea to production by myself: native iOS, full-stack web, and the AI systems that run them. Short loops, real users, things that ship.
 
 ### What I'm building
 
-**[SwiftSign](https://github.com/shahdadk/swiftsign)** &nbsp;—&nbsp; e-signing built for developers
-A Next.js and Prisma platform with JavaScript and Python SDKs and a built-in MCP server, so software can prepare, send, and sign documents on its own. Live at **[swiftsign.ca](https://swiftsign.ca)**.
+**[SwiftSign](https://github.com/shahdadk/swiftsign)** &nbsp;·&nbsp; AI-native e-signatures
+A Next.js and Prisma platform with JavaScript and Python SDKs, so code and AI agents can prepare, send, and seal legally binding documents. Live at **[swiftsign.ca](https://swiftsign.ca)**.
+
+**[swiftsign-mcp](https://github.com/shahdadk/swiftsign-mcp)** &nbsp;·&nbsp; e-signature for AI agents
+An MCP server (on npm) that lets Claude Code, Cursor, or Zed send and seal documents directly. 11 tools, agent self-signup, confirm-gated live sends.
 
 ### Also shipped
 
-- **15+ native iOS apps** &nbsp;—&nbsp; Swift and SwiftUI, from health tools to everyday utilities
-- **Full-stack web** &nbsp;—&nbsp; TypeScript, Next.js, Firebase, AWS, from landing pages to live products
-- **AI systems** &nbsp;—&nbsp; MCP servers, Claude-powered automation, and workflows that do real work
+- **15+ native iOS apps** in Swift and SwiftUI, from health tools to everyday utilities
+- **Full-stack web** in TypeScript, Next.js, Firebase, and AWS, from landing pages to live products
+- **AI systems**: MCP servers, Claude-powered automation, and workflows that do real work
 
 ### Stack
 
